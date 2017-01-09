@@ -1,0 +1,15 @@
+exports.handler = function (event, context, callback) {
+    // TODO implement
+	records = JSON.parse(event);
+	var fs = require('fs');
+	var matchingRecords = records
+		.Records
+		.filter(function(record) {
+			return record.eventSource.match("s3.amazonaws.com")
+			&& record.eventName.match("GetObject");
+	});
+
+    	console.log(record.resources.ARN);
+    	callback(null, JSON.stringify(event));
+    	//console.log(JSON.stringify(event));
+};

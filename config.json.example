@@ -1,0 +1,5 @@
+{
+  "api_key": "api key from threatstack dashboard",
+  "organization": "your organization's id",
+  "s3_bucket": "the bucket to upload alerts to"
+}

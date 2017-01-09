@@ -1,0 +1,51 @@
+{
+    "version": "0",
+    "id": "df4bc74a-0a88-46d9-8046-c507898d3609",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "221470125883",
+    "time": "2017-01-08T14:15:19Z",
+    "region": "us-east-1",
+    "resources": [],
+    "detail": {
+        "eventVersion": "1.05",
+        "userIdentity": {
+            "type": "IAMUser",
+            "principalId": "AIDAJLLB5BNUY2SCUT5PI",
+            "arn": "arn:aws:iam::221470125883:user/rkreddy@gmail.com",
+            "accountId": "221470125883",
+            "accessKeyId": "AKIAJ3QHFC7BVCQH335Q",
+            "username": "rkreddy@gmail.com"
+        },
+        "eventTime": "2017-01-08T14:15:19Z",
+        "eventSource": "s3.amazonaws.com",
+        "eventName": "PutObject",
+        "awsRegion": "us-east-1",
+        "sourceIPAddress": "54.145.23.154",
+        "userAgent": "[aws-cli/1.11.32 Python/2.7.6 Linux/3.13.0-91-generic botocore/1.4.89]",
+        "requestParameters": {
+            "bucketName": "fimfilesjan7",
+            "key": "background.jpg"
+        },
+        "responseElements": {},
+        "additionalEventData": {
+            "x-amz-id-2": "vSk56MNu5OvvB+w3X7eCRfE8b3U8Bod7l01LO8YJiF8E1QgBJ5uHEbYWjTNTdrazM9JyK0ggAhU="
+        },
+        "requestID": "BD75118223B790F4",
+        "eventID": "550a93e0-7e4e-4666-a9fe-04705375fe35",
+        "readOnly": false,
+        "resources": [
+            {
+                "type": "AWS::S3::Object",
+                "ARN": "arn:aws:s3:::fimfilesjan7/background.jpg"
+            },
+            {
+                "accountId": "221470125883",
+                "type": "AWS::S3::Bucket",
+                "ARN": "arn:aws:s3:::fimfilesjan7"
+            }
+        ],
+        "eventType": "AwsApiCall",
+        "recipientAccountId": "221470125883"
+    }
+}
